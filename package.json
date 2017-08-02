@@ -1,8 +1,8 @@
 {
   "name":"scrawl",
-  "version":"1.0.3",
+  "version":"1.0.4",
   "author":"Kate Preston <ktweeden@gmail.com>",
-  "contributors": [],
+  "contributors": [ "Orien Vandenbergh <orien@icebergh.us>"],
   "repository":{
     "type": "git",
     "url": "https://github.com/ktweeden/scrawl"

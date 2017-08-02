@@ -1,12 +1,14 @@
 <footer>
   <div class="theme-info">
-    theme by <a href="https://github.com/ktweeden">Kate Preston</a>
+    theme by <a href="https://github.com/nichus">Orien Vandenbergh</a> based on work by <a href="https://github.com/ktweeden">Kate Preston</a>
   </div>
   <div class="footer-container">
     <a href="{{@blog.url/rss}}" class="social-button"><i class="icon-rss"></i></a>
     <a class="social-button twitter hidden"><i class="icon-twitter"></i></a>
     <a class="social-button github hidden"><i class="icon-github"></i></a>
     <a class="social-button facebook hidden"><i class="icon-facebook"></i></a>
+    <a class="social-button google hidden"><i class="icon-gplus"></i></a>
+    <a class="social-button linkedin hidden"><i class="icon-linkedin"></i></a>
     <a class="social-button instagram hidden"><i class="icon-instagram"></i></a>
     <a class="social-button tumblr hidden"><i class="icon-tumblr"></i></a>
     <a class="social-button pinterest hidden"><i class="icon-pinterest"></i></a>
@@ -38,6 +40,10 @@
           return "https://www.codepen.io/" + username;
         case "Youtube":
           return "https://www.youtube.com/user/" + username;
+        case "LinkedIn":
+          return "https://www.linkedin.com/in/" + username;
+        case "Google":
+          return "https://plus.google.com/" + username;
         case "Vine":
           return "https://www.vine.co/" + username;
       }
@@ -56,6 +62,8 @@
       revealPlatform('Twitter');
       revealPlatform('Github');
       revealPlatform('Facebook');
+      revealPlatform('LinkedIn');
+      revealPlatform('Google');
       revealPlatform('Instagram');
       revealPlatform('Tumblr');
       revealPlatform('Pinterest');
