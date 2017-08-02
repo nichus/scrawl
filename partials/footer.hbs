@@ -7,7 +7,8 @@
     <a class="social-button twitter hidden"><i class="icon-twitter"></i></a>
     <a class="social-button github hidden"><i class="icon-github"></i></a>
     <a class="social-button facebook hidden"><i class="icon-facebook"></i></a>
-    <a class="social-button google hidden"><i class="icon-gplus"></i></a>
+    <a class="social-button gplus hidden"><i class="icon-gplus"></i></a>
+    <a class="social-button reddit hidden"><i class="icon-reddit"></i></a>
     <a class="social-button linkedin hidden"><i class="icon-linkedin"></i></a>
     <a class="social-button instagram hidden"><i class="icon-instagram"></i></a>
     <a class="social-button tumblr hidden"><i class="icon-tumblr"></i></a>
@@ -42,8 +43,10 @@
           return "https://www.youtube.com/user/" + username;
         case "LinkedIn":
           return "https://www.linkedin.com/in/" + username;
-        case "Google":
+        case "GPlus":
           return "https://plus.google.com/" + username;
+        case "Reddit":
+          return "https://reddit.com/u/" + username;
         case "Vine":
           return "https://www.vine.co/" + username;
       }
@@ -55,7 +58,7 @@
         $(".social-button."+platform.toLowerCase()).removeClass("hidden");
         $('.social-button.' + platform.toLowerCase()).attr('href', formSocialUrl(platform, window.__themeCfg[reference]));
       }
-      else console.warn("To add a " + platform + " profile link to your blog, put '\x3Cscript\>window.__themeCfg." + reference + "= \'my" + platform + "Username\';\x3C/script\>' in the Ghost code injection!");
+      // else console.warn("To add a " + platform + " profile link to your blog, put '\x3Cscript\>window.__themeCfg." + reference + "= \'my" + platform + "Username\';\x3C/script\>' in the Ghost code injection!");
     }
 
     function revealSocialLinks() {
@@ -63,7 +66,8 @@
       revealPlatform('Github');
       revealPlatform('Facebook');
       revealPlatform('LinkedIn');
-      revealPlatform('Google');
+      revealPlatform('GPlus');
+      revealPlatform('Reddit');
       revealPlatform('Instagram');
       revealPlatform('Tumblr');
       revealPlatform('Pinterest');
